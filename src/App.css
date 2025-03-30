@@ -1,38 +1,52 @@
-.App {
+/*css for body.js*/
+.container2{
+  color: blueviolet;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*css for navbar.js*/
+/* .navbar_container .navbar-nav{
+  margin-left: 260px;
+} */
+
+/* .navbar_container{
+  position: fixed;
+} */
+
+.navbar_container {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .form-check-label {
+      font-size: 0.9rem; /* Adjust label size for smaller screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*css for form.js*/
+.form-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.form-preview-text{
+  margin-left: 20px;
+}
+
+.form-button-container{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 25px;
 }
