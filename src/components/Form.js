@@ -10,8 +10,8 @@ export default function Form(props) {
     backgroundColor: "white",
   });
 
-  // creating useState for setting text of the button.......
-  const [button_text, set_button_text] = useState("Enable Dark Mode");
+  // // creating useState for setting text of the button.......
+  // const [button_text, set_button_text] = useState("Enable Dark Mode");
 
   // creating function for to convert text to upper case........
   const button_upper_click = () => {
@@ -39,28 +39,28 @@ export default function Form(props) {
     set_text(event.target.value);
   };
 
-  // creating function to enable the dark mode for website.....
-  const button_dark_click = (event) => {
-    console.log("dark mode");
-    if (
-      textarea_color.color == "black" &&
-      textarea_color.backgroundColor == "white"
-    ) {
-      set_textarea_color({
-        color: "black",
-        backgroundColor: "grey",
-        border: "1px solid black",
-      });
-      set_button_text("Enable Light Mode");
-    } else {
-      button_dark_click.value = "Enable Dark Mode";
-      set_textarea_color({
-        color: "black",
-        backgroundColor: "white",
-      });
-      set_button_text("Enable Dark Mode");
-    }
-  };
+  // // creating function to enable the dark mode for website.....
+  // const button_dark_click = (event) => {
+  //   console.log("dark mode");
+  //   if (
+  //     textarea_color.color == "black" &&
+  //     textarea_color.backgroundColor == "white"
+  //   ) {
+  //     set_textarea_color({
+  //       color: "black",
+  //       backgroundColor: "grey",
+  //       border: "1px solid black",
+  //     });
+  //     set_button_text("Enable Light Mode");
+  //   } else {
+  //     button_dark_click.value = "Enable Dark Mode";
+  //     set_textarea_color({
+  //       color: "black",
+  //       backgroundColor: "white",
+  //     });
+  //     set_button_text("Enable Dark Mode");
+  //   }
+  // };
 
   // creating function to copy text from textarea...........
   const button_copy_click = () => {
@@ -97,7 +97,7 @@ export default function Form(props) {
         {/* Adding Buttons........ */}
         <button
           type="button"
-          className="btn btn-primary px-4"
+          className="button-class btn btn-primary px-4"
           onClick={button_upper_click}
           disabled={text.length === 0}
         >
@@ -106,7 +106,7 @@ export default function Form(props) {
 
         <button
           type="button"
-          className="btn btn-secondary px-4"
+          className="button-class btn btn-secondary px-4"
           onClick={button_lower_click}
           disabled={text.length === 0}
         >
@@ -115,7 +115,7 @@ export default function Form(props) {
 
         <button
           type="button"
-          className="btn btn-danger px-4"
+          className="button-class btn btn-danger px-4"
           onClick={button_clear_click}
           disabled={text.length === 0}
         >
@@ -124,7 +124,7 @@ export default function Form(props) {
 
         <button
           type="button"
-          className="btn btn-warning px-4"
+          className="button-class btn btn-warning px-4"
           onClick={button_copy_click}
           disabled={text.length === 0}
         >
@@ -133,7 +133,7 @@ export default function Form(props) {
 
         <button
           type="button"
-          className="btn btn-info px-4"
+          className="button-class btn btn-info px-4"
           onClick={button_remove_click}
           disabled={text.length === 0}
         >

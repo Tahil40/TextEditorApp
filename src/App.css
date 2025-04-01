@@ -50,3 +50,27 @@
   justify-content: center;
   gap: 25px;
 }
+
+
+@media (min-width: 50px) and (max-width: 950px){
+  .form-button-container{
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 760px) {
+  .alert-class{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 5280px){
+  .alert-class{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+}

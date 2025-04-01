@@ -9,7 +9,7 @@ export default function Alert(props){
         <>   
 
         <div style={{height: '50px'}}> 
-        <div class="alert alert-warning alert-dismissible fade show text-center" style={{marginLeft:"350px", marginRight:"350px"}} role="alert">
+        <div class="alert-class alert alert-warning alert-dismissible fade show text-center" role="alert">
             <strong>{props.alert.type}</strong>{props.alert.msg}
         </div>
         </div>
